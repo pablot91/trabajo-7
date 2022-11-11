@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+body{
+    background-color: rgb(255,227,179); 
+}
+.imagenes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    background: url(https://images.pexels.com/photos/9299260/pexels-photo-9299260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    height: 500px;
+    width: 1200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+} 
+/* variables globales para los colores de las redes sociales  */
+:root{
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --youtube: #f80606; 
+}
+
+.redes-container{
+    background: rgb(29,29,27) ;
+    opacity: 70%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 78%;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 169px;
+
+
+}
+.redes-container ul li{
+    display: inline-block;
+    margin: 0 5px;  
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.redes-container ul li a{
+    display: block;
+    padding: 0 5px;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0,0,0,.2);
+    transition: .2s;
+}
+.redes-container ul:hover a{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+.redes-container ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0,0,0,.4);
+    filter: none;
+    -webkit-filter: none;
+}
+.redes-container ul li .facebook:hover{
+    background: var(--facebook);
+}
+.redes-container ul li .instagram:hover{
+    background: var(--instagram);
+}
+.redes-container ul li .youtube:hover{
+    background: var(--youtube);
+}
+
+
+
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(29,29,27);
+    opacity: 70%;
+    width: 50%;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 390px;
+    
+}
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+.menu li:hover{
+    background-color: rgb(232, 12, 12);
+}
+
+

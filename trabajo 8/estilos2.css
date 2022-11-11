@@ -1,0 +1,93 @@
+nav{
+    position: fixed;
+    top: 5;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.6);
+    border-bottom: 1px solid #fff;
+}
+:root{
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --youtube: #f80606; 
+}
+
+.redes-container{
+    background: rgb(29,29,27) ;
+    opacity: 70%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+}
+.redes-container ul li{
+    display: inline-block;
+    margin: 0 5px;  
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.redes-container ul li a{
+    display: block;
+    padding: 0 5px;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0,0,0,.2);
+    transition: .2s;
+}
+.redes-container ul:hover a{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+.redes-container ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0,0,0,.4);
+    filter: none;
+    -webkit-filter: none;
+}
+.redes-container ul li .facebook:hover{
+    background: var(--facebook);
+}
+.redes-container ul li .instagram:hover{
+    background: var(--instagram);
+}
+.redes-container ul li .youtube:hover{
+    background: var(--youtube);
+}
+
+
+
+section{
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url(https://images.pexels.com/photos/9299260/pexels-photo-9299260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+div menu{
+    justify-content: center
+    
+}
+
+.menu1{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: rgb(228, 14, 14);
+    text-decoration: none;
+}
+.menu li:hover{
+    background-color: rgb(0, 0, 0);
+}
